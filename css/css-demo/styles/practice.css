@@ -7,3 +7,9 @@ section#contact-info p, .job ul {
   padding: 10px 20px;
   margin: 20px 0;
 }
+section.job:hover {
+  background-color: #19abb5;
+}
+section.job ul li {
+  list-style-type: circle;
+}
