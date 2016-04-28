@@ -3,18 +3,19 @@ div {
   width: 100%;
   height: 100%;
 }
-.octopus {
+#octopus {
   display: block;
+  position: relative;
   margin: auto;
   margin-top: 200px;
 }
-.hat {
+#hat {
   position: relative;
-  bottom: 360;
-  left: 420;
+  bottom: 375px;
+  left: 410px;
 }
-.glasses {
+#glasses {
   position: relative;
-  top: 0;
-  left: 0;
+  bottom: 300px;
+  left: 200px;
 }
