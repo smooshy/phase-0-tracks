@@ -1,18 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
 img {
   border: 2px solid blue;
-  display: block;
 }
 
-#octopus {
+#octo-wrapper img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
   margin: auto;
-  margin-top: 200px;
 }
 
 #hat {
   position: absolute;
+  left: 40%;
+  top: 125px;
 
 }
 
 #glasses {
   position: absolute;
+  left: 45%;
+  top: 300px;
 }
