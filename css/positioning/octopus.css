@@ -8,25 +8,26 @@ body {
   margin: 0 auto;
 }
 
-#octopus {
-  position: absolute;
+#octopus img {
+  position: fixed;
+  display: block;
   left: 0;
   right: 0;
   top: 200px;
   margin: auto;
 }
 
-#hat {
-  position: absolute;
-  width: 100%;
-  text-align: center;
+#hat img {
+  position: relative;
+  display: block;
   top: 125px;
-
+  margin: auto;
 }
 
-#glasses {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 300px;
+#glasses img {
+  position: relative;
+  display: block;
+  top: 130px;
+  margin: auto;
+
 }
