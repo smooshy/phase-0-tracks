@@ -21,13 +21,15 @@ img {
 
 #hat {
   position: absolute;
-  left: 40%;
+  width: 100%;
+  text-align: center;
   top: 125px;
 
 }
 
 #glasses {
   position: absolute;
-  left: 45%;
+  width: 100%;
+  text-align: center;
   top: 300px;
 }
