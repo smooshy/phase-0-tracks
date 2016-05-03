@@ -1,3 +1,32 @@
 body {
-  background-color: blue;
+  font-family: Helvetica, sans-serif;
+  width: 90%;
+  margin: 0 auto;
+}
+h1, h2 {
+  font-family: Times, serif;
+}
+header {
+    background-color: #5d5d5d;
+}
+header h1 {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+}
+.column-1 {
+    background-color: #c7c7c7;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+.column-2 {
+    background-color: #c7c7c7;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
 }
