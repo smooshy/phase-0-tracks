@@ -1,3 +1,19 @@
-body {
-  background-color: blue;
+header {
+    background-color: #5d5d5d;
+}
+.column-1 {
+    background-color: #c7c7c7;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+.column-2 {
+    background-color: #c7c7c7;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
 }
