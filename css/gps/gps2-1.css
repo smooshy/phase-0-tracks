@@ -2,17 +2,25 @@ body {
   font-family: Helvetica, sans-serif;
   width: 90%;
   margin: 0 auto;
+  padding: 0;
 }
 h1, h2 {
   font-family: Times, serif;
 }
 header {
     background-color: #5d5d5d;
+    margin-bottom: 0;
 }
 header h1 {
   text-align: center;
   color: #ffffff;
   padding-top: 15px;
+  margin-bottom: 0;
+}
+header p {
+  padding: 10px 20px 10px 20px;
+  margin-top: 0;
+  color: #50c966;
 }
 .column-1 {
     background-color: #c7c7c7;
@@ -29,4 +37,18 @@ header h1 {
 footer {
     background-color: #000000;
     color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+footer a:link {
+  color: #50c966;
+  text-decoration: none;
+}
+footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+footer a:visited {
+  color: yellow;
+  text-decoration: none;
 }
