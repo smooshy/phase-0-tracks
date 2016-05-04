@@ -33,6 +33,7 @@ header p {
     height: 1000px;
     vertical-align: top;
     padding: 15px;
+    float: left;
 }
 .column-1 ul li {
   list-style: square;
@@ -44,13 +45,14 @@ header p {
     height: 1000px;
     vertical-align: top;
     padding: 15px;
+    float: right;
 }
-
 footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    clear: both;
 }
 footer a:link {
   color: #50c966;
