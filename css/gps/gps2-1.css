@@ -30,6 +30,7 @@ header p {
     background-color: #c7c7c7;
     display: inline-block;
     width: 45%;
+    height: 1000px;
     vertical-align: top;
     padding: 15px;
 }
@@ -40,9 +41,11 @@ header p {
     background-color: #c7c7c7;
     display: inline-block;
     width: 45%;
+    height: 1000px;
     vertical-align: top;
     padding: 15px;
 }
+
 footer {
     background-color: #000000;
     color: #ffffff;
