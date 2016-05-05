@@ -1,5 +1,7 @@
-approx_age = nil
+# This was a Pairing Session between 
+# Marty McLaughlin and Andrew Peterson
 
+approx_age = nil
 
 puts "What's your hamsters name?"
 hamsters_name = gets.chomp
