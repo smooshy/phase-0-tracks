@@ -1,0 +1,15 @@
+- Set "exit at floor" to 27
+
+- Drop robot off at front door
+- Enter building through front door and proceed forward until a wall is reached (Wall A).
+- Turn left and move along Wall A until a wall is reached (Wall B).
+- From control pad on Wall B push the top button with the upward facing arrow on it.
+- While facing Wall B traverse along the wall for 5 feet to stop in front of elevator doors.
+- When doors open move forward 5 feet.
+- Turn 180 degrees counterclockwise and find the floor selector panel just to your right.
+- Until "exit at floor" is found (button with 27 on it is located on panel)
+  - Starting at lower left corner of selector panel scan right to end of row.
+  - When end of row is reached return to start of row.
+  - Advance up one row and scan right to end of row.
+- Stop scan
+- Press corresponding button and exit at floor
