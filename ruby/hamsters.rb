@@ -1,4 +1,4 @@
-# This was a Pairing Session between 
+# This was a Pairing Session between
 # Marty McLaughlin and Andrew Peterson
 
 approx_age = nil
@@ -12,11 +12,7 @@ fur_color = gets.chomp
 puts "Is this hamster available for adoption?"
 adoption = gets.chomp
 puts "Whats the approximate age of the hamster?"
-if approx_age == nil
-	approx_age = gets.chomp
-else
-	approx_age = approx_age.to_f
-end
+approx_age = Float(gets)rescue nil
 
 if adoption == "yes" || adoption == "Yes" || adoption == "y" || adoption == "Y"
 	adoption = "y"
