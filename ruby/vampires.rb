@@ -21,8 +21,20 @@ else
   age = false
 end
 
-if health_insurance == "yes" || health_insurance == "Yes" || health_insurance == "y" || health_insurance == "Y"
-	health_insurance = "y"
+if garlic == "yes" || garlic == "Yes" || garlic == "y" || garlic == "Y"
+	garlic = true
 else
-	health_insurance = "n"
+	garlic = false
 end
+
+if health_insurance == "yes" || health_insurance == "Yes" || health_insurance == "y" || health_insurance == "Y"
+	health_insurance = true
+else
+	health_insurance = false
+end
+
+age == true && (garlic == true || health_insurance == true)
+puts "Probably not a vampire"
+
+age == false && (garlic == false || health_insurance == false)
+puts "Probably a vampire"
