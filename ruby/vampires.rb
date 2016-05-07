@@ -1,58 +1,49 @@
 # Questionaire for new hires
 # Gather employee information
 
-puts "What is your full name?"
-  name = gets.chomp
+puts "How many new hires will be processed today?"
+employees_processed = gets.chomp.to_i
 
-  if name == "Drake Cula" || name == "Tu Fang"
-  	name = false
-  else
-  	name = true
-  end
+new_hires = 1
+while new_hires <= employees_processed
 
-  puts "How old are you?"
-  age = gets.chomp.to_i
-  puts "What year were you born?"
-  birth_year = gets.chomp.to_i
+	puts "What is your full name?"
+	  name = gets.chomp
 
-   if age == (2016 - birth_year)
-    age = true
-  else
-    age = false
-  end
+	  if name == "Drake Cula" || name == "Tu Fang"
+	  	name = false
+	  else
+	  	name = true
+	  end
 
-  puts "We love garlic bread here. Should we order some for you?"
-  garlic = gets.chomp
+	  puts "How old are you?"
+	  age = gets.chomp.to_i
+	  puts "What year were you born?"
+	  birth_year = gets.chomp.to_i
 
-   if garlic == "yes" || garlic == "Yes" || garlic == "y" || garlic == "Y"
-  	garlic = true
-  else
-  	garlic = false
-  end
+	   if age == (2016 - birth_year)
+	    age = true
+	  else
+	    age = false
+	  end
 
-  puts "Would you like to enroll in the company's health coverage?"
-  health_insurance = gets.chomp
+	  puts "We love garlic bread here. Should we order some for you?"
+	  garlic = gets.chomp
 
-  if health_insurance == "yes" || health_insurance == "Yes" || health_insurance == "y" || health_insurance == "Y"
-  	health_insurance = true
-  else
-  	health_insurance = false
-  end
+	   if garlic == "yes" || garlic == "Yes" || garlic == "y" || garlic == "Y"
+	  	garlic = true
+	  else
+	  	garlic = false
+	  end
 
-   if name == false
-      puts "Definitely a vampire"
-  elsif age && (garlic || health_insurance)
-      puts "Probably not a vampire"
-  elsif age == false && (garlic == false || health_insurance == false)
-      puts "Probably a vampire"
-  elsif age == false && garlic == false && health_insurance == false
-      puts "Almost certainly a vampire"
-  else
-      puts "Results inconclusive"
-  end
+	  puts "Would you like to enroll in the company's health coverage?"
+	  health_insurance = gets.chomp
 
-  new_hires += 1
-end
+	  if health_insurance == "yes" || health_insurance == "Yes" || health_insurance == "y" || health_insurance == "Y"
+	  	health_insurance = true
+	  else
+	  	health_insurance = false
+	  end
 
 
 puts "What allergies do you have? Please type 'done' once all allergies are listed."
@@ -61,8 +52,23 @@ allergy = gets.chomp
 while allergy != "done" && allergy != "sunshine"
 	puts "Please list next allergy"
 	allergy = gets.chomp
+end
 
-	if allergy == "sunshine"
-		puts "Probably a vampire"
-	end
+
+
+	   if name == false
+	      puts "Definitely a vampire"
+	   elsif allergy == "sunshine"
+		  puts "Probably a vampire"
+	  elsif age && (garlic || health_insurance)
+	      puts "Probably not a vampire"
+	  elsif age == false && (garlic == false || health_insurance == false)
+	      puts "Probably a vampire"
+	  elsif age == false && garlic == false && health_insurance == false
+	      puts "Almost certainly a vampire"
+	  else
+	      puts "Results inconclusive"
+	  end
+
+  new_hires += 1
 end
