@@ -50,5 +50,5 @@ while new_hires <= employees_processed
   else
       puts "Results inconclusive"
   end
+  new_hires += 1
 end
-new_hires += 1
