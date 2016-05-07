@@ -71,4 +71,6 @@ end
 	  end
 
   new_hires += 1
+
+  puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 end
