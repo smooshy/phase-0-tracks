@@ -39,14 +39,14 @@ while new_hires <= employees_processed
   	health_insurance = false
   end
 
-  if name == "Drake Cula" || name == "Tu Fang"
-      puts "Definitely a vampire"
-  elsif age == true && (garlic == true || health_insurance == true)
+  if age == true && (garlic == true || health_insurance == true)
       puts "Probably not a vampire"
   elsif age == false && (garlic == false || health_insurance == false)
       puts "Probably a vampire"
   elsif age == false && garlic == false && health_insurance == false
       puts "Almost certainly a vampire"
+  elsif name == "Drake Cula" || name == "Tu Fang"
+      puts "Definitely a vampire"
   else
       puts "Results inconclusive"
   end
@@ -54,12 +54,14 @@ while new_hires <= employees_processed
 end
 
 
-puts "Please list all known allergies."
+puts "What allergies do you have? Please type 'done' once all allergies are listed."
 allergy = gets.chomp
 
-until allergy == "done"
-  puts allergy
-  if allergy == "sunshine"
-    return "Probably a vampire"
-  end
+while allergy != "done" && allergy != "sunshine"
+	puts "Please list next allergy"
+	allergy = gets.chomp
+
+	if allergy == "sunshine"
+		puts "Probably a vampire"
+	end
 end
