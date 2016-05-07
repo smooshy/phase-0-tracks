@@ -1,12 +1,11 @@
 # Questionaire for new hires
-# Gather employee information
-
 puts "How many new hires will be processed today?"
 employees_processed = gets.chomp.to_i
 
 new_hires = 1
 while new_hires <= employees_processed
 
+# Gather employee information
 	puts "What is your full name?"
 	  name = gets.chomp
 
@@ -55,7 +54,7 @@ while allergy != "done" && allergy != "sunshine"
 end
 
 
-
+# Check employee responses to verify vampire or not.
 	   if name == false
 	      puts "Definitely a vampire"
 	   elsif allergy == "sunshine"
