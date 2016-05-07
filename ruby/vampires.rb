@@ -52,3 +52,14 @@ while new_hires <= employees_processed
   end
   new_hires += 1
 end
+
+
+puts "Please list all known allergies."
+allergy = gets.chomp
+
+until allergy == "done"
+  puts allergy
+  if allergy == "sunshine"
+    return "Probably a vampire"
+  end
+end
