@@ -1,3 +1,5 @@
+How to Use an Elevator
+
 - Set "exit at floor" to 27
 
 - Drop robot off at front door
@@ -13,3 +15,6 @@
   - Advance up one row and scan right to end of row.
 - Stop scan
 - Press corresponding button and exit at floor
+
+
+Warm a Bottle to Feed Nora
