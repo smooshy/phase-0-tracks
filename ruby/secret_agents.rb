@@ -26,8 +26,23 @@ def encrypt(password)
     password[index] = password[index].next!
     index += 1
   end
-  puts password
+  return password
 end
-encrypt(user_input)
+cipher = encrypt(user_input.dup)
+p cipher
 
 # Decrypt Method
+def decrypt (encrypted_password)
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  index = 0
+  while index < encrypted_password.length
+    letter = encrypted_password[index]
+    position = alphabet.index(letter) #magic
+    encrypted_password[index] = alphabet[position-1]
+
+    index += 1
+  end
+  return encrypted_password
+end
+plaintext = decrypt(cipher.dup)
+p plaintext
