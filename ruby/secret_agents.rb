@@ -39,7 +39,6 @@ def decrypt (encrypted_password)
     letter = encrypted_password[index]
     position = alphabet.index(letter) #magic
     encrypted_password[index] = alphabet[position-1]
-
     index += 1
   end
   return encrypted_password
