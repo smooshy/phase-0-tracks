@@ -16,32 +16,52 @@
 # - Print decrypted user_input to screen
 
 
-puts "Please provide your password"
-  user_input = gets.chomp
+#puts "Please provide your password"
+#user_input = gets.chomp
 
-# Encrypt Method
-def encrypt(password)
-  index = 0
-  while index < password.length
-    password[index] = password[index].next!
-    index += 1
-  end
-  return password
-end
-cipher = encrypt(user_input.dup)
-p cipher
+#METHOD DECLARATIONS
 
-# Decrypt Method
-def decrypt (encrypted_password)
-  alphabet = "abcdefghijklmnopqrstuvwxyz"
-  index = 0
-  while index < encrypted_password.length
-    letter = encrypted_password[index]
-    position = alphabet.index(letter) #magic
-    encrypted_password[index] = alphabet[position-1]
-    index += 1
-  end
-  return encrypted_password
-end
-plaintext = decrypt(cipher.dup)
-p plaintext
+	# Encrypts password entry for security
+	def encrypt(password)
+	  index = 0
+	  while index < password.length
+	    password[index] = password[index].next!
+	    index += 1
+	  end
+	  return password
+	end
+#	cipher = encrypt(user_input.dup)
+#	p cipher
+
+	# Decrypts encrypted password
+	def decrypt (encrypted_password)
+	  alphabet = "abcdefghijklmnopqrstuvwxyz"
+	  index = 0
+	  while index < encrypted_password.length
+	    letter = encrypted_password[index]
+	    position = alphabet.index(letter) #magic
+	    encrypted_password[index] = alphabet[position-1]
+	    index += 1
+	  end
+	  return encrypted_password
+	end
+#	plaintext = decrypt(user_input.dup)
+#	p plaintext
+
+# OUR DRIVER CODE
+
+# ask user for a password
+puts "What is your password?"
+user_input = gets.chomp
+
+# encrypt the user's password
+puts "We can encrypt your password like this:"
+p encrypt(user_input)
+
+
+# decrypt the user's password
+puts "We can decrypt your password like this:"
+p decrypt(user_input)
+
+# confirm that request has been fulfilled
+puts "Password request complete."
