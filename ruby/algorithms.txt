@@ -1,0 +1,38 @@
+How to Use an Elevator
+
+- Set "exit at floor" to 27
+
+- Drop robot off at front door
+- Enter building through front door and proceed forward until a wall is reached (Wall A).
+- Turn left and move along Wall A until a wall is reached (Wall B).
+- From control pad on Wall B push the top button with the upward facing arrow on it.
+- While facing Wall B traverse along the wall for 5 feet to stop in front of elevator doors.
+- When doors open move forward 5 feet.
+- Turn 180 degrees counterclockwise and find the floor selector panel just to your right.
+- Until "exit at floor" is found (button with 27 on it is located on panel)
+  - Starting at lower left corner of selector panel scan right to end of row.
+  - When end of row is reached advance up one row and scan in opposite direction  to end of row.
+- Stop scan
+- Press corresponding button and exit at floor
+
+
+Warm a Bottle to Feed Nora
+
+- Proceed to refrigerator and open door
+- Start at top shelf left side
+- Until bottle is located
+  - Scan top shelf from left wall to right wall
+  - Traverse down one shelf and scan in opposite direction
+-End scan
+
+- With bottle located turn 180 degrees and walk forward until counter is reached
+- Place bottle in bottle warmer
+- Turn warmer dial clockwise to on position
+- Until milk is warm to the touch (check temperature on front of wrist)
+  - Remove bottle from warmer every 2 minutes
+  - Pour 3 drops on wrist to check temperature
+  - Return bottle to warmer
+- Stop warming
+- Turn warmer counterclockwise to off position
+
+- Feed Nora bottle.
