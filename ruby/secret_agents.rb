@@ -58,7 +58,6 @@ user_input = gets.chomp
 puts "We can encrypt your password like this:"
 p encrypt(user_input)
 
-
 # decrypt the user's password
 puts "We can decrypt your password like this:"
 p decrypt(user_input)
