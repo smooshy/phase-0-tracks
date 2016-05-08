@@ -23,9 +23,12 @@
 
 	# Encrypts password entry for security
 	def encrypt(password)
+	   alphabet = "abcdefghijklmnopqrstuvwxyz"
 	  index = 0
 	  while index < password.length
-	    password[index] = password[index].next!
+	    letter = password[index]
+	    position = alphabet.index(letter) #magic
+	    password[index] = alphabet[position].next!
 	    index += 1
 	  end
 	  return password
@@ -57,6 +60,7 @@ user_input = gets.chomp
 # encrypt the user's password
 puts "We can encrypt your password like this:"
 p encrypt(user_input)
+
 
 # decrypt the user's password
 puts "We can decrypt your password like this:"
