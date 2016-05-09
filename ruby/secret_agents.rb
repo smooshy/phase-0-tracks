@@ -28,7 +28,13 @@
 	  while index < password.length
 	    letter = password[index]
 	    position = alphabet.index(letter) #magic
-	    password[index] = alphabet[position].next!
+
+      if password[index] == "z"
+	    	password[index] = "a"
+	    else
+	    	password[index] = alphabet[position].next!
+	    end
+
 	    index += 1
 	  end
 	  return password
