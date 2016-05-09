@@ -21,56 +21,79 @@
 
 #METHOD DECLARATIONS
 
-	# Encrypts password entry for security
-	def encrypt(password)
-	   alphabet = "abcdefghijklmnopqrstuvwxyz"
-	  index = 0
-	  while index < password.length
-	    letter = password[index]
-	    position = alphabet.index(letter) #magic
+puts "Would like to encrypt or decrypt a password?"
+status = gets.chomp
 
-      if password[index] == "z"
-	    	password[index] = "a"
-	    else
-	    	password[index] = alphabet[position].next!
-	    end
+if status == "encrypt" || status == "Encrypt"
+status = "encrypt"
+end
 
-	    index += 1
-	  end
-	  return password
-	end
-#	cipher = encrypt(user_input.dup)
-#	p cipher
+if status == "decrypt" || status == "Decrypt"
+status = "decrypt"
+end
 
-	# Decrypts encrypted password
-	def decrypt (encrypted_password)
-	  alphabet = "abcdefghijklmnopqrstuvwxyz"
-	  index = 0
-	  while index < encrypted_password.length
-	    letter = encrypted_password[index]
-	    position = alphabet.index(letter) #magic
-	    encrypted_password[index] = alphabet[position-1]
-	    index += 1
-	  end
-	  return encrypted_password
-	end
-#	plaintext = decrypt(user_input.dup)
-#	p plaintext
+puts "Please provide your password"
+user_input = gets.chomp
 
+if status == "encrypt"
+# Encrypts password entry for security
+def encrypt(password)
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  index = 0
+  while index < password.length
+    letter = password[index]
+    position = alphabet.index(letter) #magic
+
+    if password[index] == "z"
+      password[index] = "a"
+    else
+      password[index] = alphabet[position].next!
+    end
+
+    index += 1
+  end
+  return password
+end
+cipher = encrypt(user_input.dup)
+p cipher
+end
+
+if status == "decrypt"
+# Decrypts encrypted password
+def decrypt (encrypted_password)
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  index = 0
+  while index < encrypted_password.length
+    letter = encrypted_password[index]
+    position = alphabet.index(letter) #magic
+    encrypted_password[index] = alphabet[position-1]
+    index += 1
+  end
+  return encrypted_password
+end
+plaintext = decrypt(user_input.dup)
+p plaintext
+end
+
+if status == "encrypt"
+p "Your password has been encrypted."
+end
+if status == "decrypt"
+p "Your password has been decrypted."
+end
 # OUR DRIVER CODE
 
 # ask user for a password
-puts "What is your password?"
-user_input = gets.chomp
+#puts "What is your password?"
+#user_input = gets.chomp
 
 # encrypt the user's password
-puts "We can encrypt your password like this:"
-p encrypt(user_input)
-
+#puts "We can encrypt your password like this:"
+#p encrypt(user_input)
 
 # decrypt the user's password
-puts "We can decrypt your password like this:"
-p decrypt(user_input)
+#puts "We can decrypt your password like this:"
+#p decrypt(user_input)
 
 # confirm that request has been fulfilled
-puts "Password request complete."
+#puts "Password request complete."
