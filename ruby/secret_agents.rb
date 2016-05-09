@@ -81,6 +81,7 @@ end
 if status == "decrypt"
 p "Your password has been decrypted."
 end
+
 # OUR DRIVER CODE
 
 # ask user for a password
@@ -97,3 +98,11 @@ end
 
 # confirm that request has been fulfilled
 #puts "Password request complete."
+
+# Release 4 Method call
+#decrypt(encrypt("swordfish"))
+
+#this works because the computer processes
+#parentheses first from inside working outward. So it
+#is first calling the encrypt method on "swordfish"
+#and then calling the decrypt method.
