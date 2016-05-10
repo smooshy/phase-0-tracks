@@ -28,8 +28,8 @@
 "The mystery of the missing first letter"[1..-1]
  => "he mystery of the missing first letter"
 
-# "Elementary,    my   dear        Watson!".strip
-# => "Elementary, my dear Watson!"
+"Elementary,    my   dear        Watson!".squeeze
+ => "Elementary, my dear Watson!"
 
 "z".codepoints
  => 122
