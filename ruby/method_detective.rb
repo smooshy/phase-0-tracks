@@ -25,15 +25,15 @@
 "The case of the disappearing last letter".chop
  => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<???>
-# => "he mystery of the missing first letter"
+"The mystery of the missing first letter"[1..-1]
+ => "he mystery of the missing first letter"
 
-# "Elementary,    my   dear        Watson!".<???>
+# "Elementary,    my   dear        Watson!".strip
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
-# => 122
-# (What is the significance of the number 122 in relation to the character z?)
+"z".codepoints
+ => 122
+# (What is the significance of the number 122 in relation to the character z?) 122 is the codepoint for a lowercase "z".
 
-# "How many times does the letter 'a' appear in this string?".<???>
-# => 4
+"How many times does the letter 'a' appear in this string?".count("a")
+ => 4
