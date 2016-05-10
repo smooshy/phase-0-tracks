@@ -16,11 +16,11 @@
 "Stop! You’re under arrest!".upcase
  => "STOP! YOU’RE UNDER ARREST!"
 
-# "the usual".<???>
-#=> "the usual suspects"
+"the usual"<<" suspects" || "the usual".concat(" suspects")
+ => "the usual suspects"
 
-# " suspects".<???>
-# => "the usual suspects"
+" suspects".prepend("the usual")
+ => "the usual suspects"
 
 "The case of the disappearing last letter".chop
  => "The case of the disappearing last lette"
