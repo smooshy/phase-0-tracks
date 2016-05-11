@@ -1,4 +1,4 @@
-#5.2
+#5.2 Arrays
 #Will Friebel
 #Andrew Peterson
 
