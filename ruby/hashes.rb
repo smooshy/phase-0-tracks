@@ -2,7 +2,7 @@
 #   -save value to key in hash
 # Repeat previous steps for clients age, nmuber of children, home square footage and decor theme
 # Print client information for review
-# Prompt designer if changes are needed
+# Prompt designer to review and confirm correct or if needed make a change
 # if changes are needed
 #   - allow designer to re-enter value for a specific question and print updated client information.
 #   - else end program
@@ -47,6 +47,12 @@ client_information[:second_contact] = gets.chomp
 puts "What is your secondary contacts phone number?"
 client_information[:second_contact_phone] = gets.chomp
 
-
-
+# Prints hash to screen
 p client_information
+
+# Prompt designer to review information
+puts "Please review the information and update the value for a specific key if needed. If a change is needed, what key needs to be updated? If none, please type 'none'."
+review = gets.chomp
+if review == "none"
+  p "Thank you, this profile is complete."
+end
