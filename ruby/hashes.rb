@@ -51,8 +51,8 @@ client_information[:second_contact_phone] = gets.chomp
 p client_information
 
 # Prompt designer to review information
-puts "Please review the information and update the value for a specific key if needed. If a change is needed, what key needs to be updated? If none, please type 'none'."
-review = gets.chomp
-if review == "none"
+puts "Please review the information any errors. If a correction is needed, please specify what needs to be corrected? If there are no errors please enter: none."
+review = gets.chomp.to_sym
+if review == :none
   p "Thank you, this profile is complete."
 end
