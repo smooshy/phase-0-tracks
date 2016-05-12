@@ -35,4 +35,17 @@ client_information[:second_contact] = gets.chomp
 puts "What is your secondary contacts phone number?"
 client_information[:second_contact_phone] = gets.chomp
 
+# Conditionals for decor Questions
+if modern == "yes" || modern == "y" || modern == "Yes" || modern == "Y"
+  client_information[:modern] = true
+else
+  client_information[:modern] =  false
+end
+
+if rustic == "yes" || rustic == "y" || rustic == "Yes" || rustic == "Y"
+  client_information[:rustic] = true
+else
+  client_information[:rustic] =  false
+end
+
 p client_information
