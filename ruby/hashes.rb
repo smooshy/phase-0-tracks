@@ -20,4 +20,19 @@ client_information[:age] = gets.chomp.to_i
 puts "How many children do you have?"
 client_information[:children] = gets.chomp.to_i
 
+puts "What is the square footage of your home?"
+client_information[:square_ft] = gets.chomp.to_i
+
+puts "Do you like modern decor?"
+client_information[:modern] = gets.chomp
+
+puts "Do you like rustic decor?"
+client_information[:rustic] = gets.chomp
+
+puts "Please provide the name of a secondary contact."
+client_information[:second_contact] = gets.chomp
+
+puts "What is your secondary contacts phone number?"
+client_information[:second_contact_phone] = gets.chomp
+
 p client_information
