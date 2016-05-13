@@ -10,7 +10,7 @@
 
 #name { |user_input| puts "Your name is #{user_input}."}
 
-
+=begin
 # Release 1
 # Array with .each iteration
 array = [9, 'hi', 'yes', 19]
@@ -33,9 +33,17 @@ end
 
 puts "Our after .map! method call:"
 p array
-
-
-
+=end
 
 # Hash with .each iteration
-#hash = {seattle => 'sounders', chicago => 'fire', portland => 'timbers', vancouver => 'whitecaps'}
+soccer_cities = {:seattle => 'sounders', :chicago => 'fire', :portland => 'timbers', :vancouver => 'whitecaps'}
+
+puts "Our original hash:"
+p soccer_cities
+
+soccer_cities.each do | city, team|
+  puts "#{city}'s team is #{team}."
+end
+
+puts "Our after .each method call for a hash:"
+p soccer_cities
