@@ -1,3 +1,4 @@
+# for comments
 # Encrypt Method
 # - Ask user for string
 # - Set response to user_input

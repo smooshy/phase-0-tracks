@@ -1,3 +1,4 @@
+# For comments
 # Questionaire for new hires
 puts "How many new hires will be processed today?"
 employees_processed = gets.chomp.to_i
