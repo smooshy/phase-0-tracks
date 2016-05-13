@@ -25,6 +25,8 @@
 puts "Would like to encrypt or decrypt a password?"
 status = gets.chomp
 
+# COMMENT - A better way to write this is with regex:
+#   status = 'encrypt' if status =~ /encrypt/i
 if status == "encrypt" || status == "Encrypt"
 status = "encrypt"
 end
@@ -37,6 +39,9 @@ puts "Please provide your password"
 user_input = gets.chomp
 
 if status == "encrypt"
+
+# COMMENT => should define the methods at the top of this file
+# COMMENT => This block is not indented. You want to indent anything within an `if` block
 # Encrypts password entry for security
 def encrypt(password)
   alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -48,6 +53,7 @@ def encrypt(password)
     if password[index] == "z"
       password[index] = "a"
     else
+      # COMMENT - does `next!` work? Never seen it. Would probalbly just do `alphabet[position + 1]`
       password[index] = alphabet[position].next!
     end
 
@@ -62,6 +68,7 @@ end
 if status == "decrypt"
 # Decrypts encrypted password
 def decrypt (encrypted_password)
+  # COMMENT => you can define `alphabet` as a constant above since you use it more than once and it never changes
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   index = 0
   while index < encrypted_password.length

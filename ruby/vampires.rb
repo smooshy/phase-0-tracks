@@ -1,13 +1,24 @@
-# For comments
+# General comments
+# => Inconsistent use of tabs and spaces. Make sure your editor is set to insert spaces for tabs. Typical tab spacing for ruby is 2 spaces
+
 # Questionaire for new hires
 puts "How many new hires will be processed today?"
 employees_processed = gets.chomp.to_i
 
+# COMMENT Shouldn't we be starting with 0?
 new_hires = 1
 while new_hires <= employees_processed
 
 # Gather employee information
 	puts "What is your full name?"
+		# COMMENT - It's not great practice to overwrite a variable for a different use. Might consider something
+		# like the following. Notice the naming of variables is more descriptive. `is_something` as a var indicates
+		# you should expect a boolean. `blah_input` is something from user input
+		#
+		# 	name_input = gets.chomp
+		# 	is_vampire = ['Drake Cula', 'Tu Fang'].include?(name_input)
+		#   or even...
+		#   is_vampire = (name_input == "Drake Cula" || name_input == "Tu Fang")
 	  name = gets.chomp
 
 	  if name == "Drake Cula" || name == "Tu Fang"
@@ -30,6 +41,10 @@ while new_hires <= employees_processed
 	  puts "We love garlic bread here. Should we order some for you?"
 	  garlic = gets.chomp
 
+		# COMMENT - you probably haven't learned regular expressions yet, but an easier way to shorten this is:
+		#
+		# likes_garlic = (garlic =~ /y(es)?/i) > -1
+		# =~ is the 'match' operator and takes a regular expression. Things within the `//` is the pattern. `i` at the end indicates case-insensitive.
 	   if garlic == "yes" || garlic == "Yes" || garlic == "y" || garlic == "Y"
 	  	garlic = true
 	  else
@@ -56,6 +71,9 @@ end
 
 
 # Check employee responses to verify vampire or not.
+
+# COMMENTS
+# => No need to check `== false`. You can do `!is_vampire` if it's already boolean. Here, good naming will make it much more readable.
 	   if name == false
 	      puts "Definitely a vampire"
 	   elsif allergy == "sunshine"
