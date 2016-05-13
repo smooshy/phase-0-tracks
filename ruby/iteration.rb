@@ -12,6 +12,7 @@
 
 
 # Release 1
+# Array with .each iteration
 array = [9, 'hi', 'yes', 19]
 
 puts "Our original array:"
@@ -24,5 +25,17 @@ end
 puts "Our after .each method call:"
 p array
 
+# Array with .map! iteration
+array.map! do | i |
+  puts i
+  i.to_s
+end
 
-#hash = {seattle => 'sounders', chicago => 'fire', portland => 'timbers', vancouver => #'whitecaps'}
+puts "Our after .map! method call:"
+p array
+
+
+
+
+# Hash with .each iteration
+#hash = {seattle => 'sounders', chicago => 'fire', portland => 'timbers', vancouver => 'whitecaps'}
